@@ -1,0 +1,31 @@
+.app { max-width: 960px; margin: 0 auto; padding: 24px 16px 56px; }
+
+.header { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 20px; }
+.header h1 { margin: 0; font-size: 2rem; line-height: 1.1; }
+.muted { color: var(--muted); margin: 4px 0 0; }
+.small { font-size: 0.82rem; }
+
+.search { width: 100%; padding: 11px 14px; margin-bottom: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.card { display: flex; flex-direction: column; gap: 8px; padding: 16px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; }
+.note h3 { margin: 0; font-size: 1.05rem; overflow-wrap: anywhere; }
+.note-body { margin: 0; flex: 1; white-space: pre-wrap; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.btn:hover { border-color: var(--accent); }
+.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
+.danger { color: var(--danger); }
+.danger.solid { background: var(--danger); border-color: var(--danger); color: var(--on-danger); }
+
+.empty { text-align: center; color: var(--muted); padding: 48px 0; }
+
+.overlay { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 16px; background: var(--scrim); }
+.modal { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: 12px; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.modal h2 { margin: 0; font-size: 1.2rem; }
+.modal input, .modal textarea { width: 100%; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+.modal textarea { resize: vertical; }
+.error { margin: 0; color: var(--danger); font-size: 0.9rem; }
+
+@media (max-width: 480px) { .header h1 { font-size: 1.6rem; } }
